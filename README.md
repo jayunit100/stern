@@ -104,6 +104,11 @@ functions](https://golang.org/pkg/text/template/#hdr-Functions)):
 
 ## Examples:
 
+Tail all pods (empty string filter)
+```
+stern "" --all-namespaces 
+```
+
 Tail the `gateway` container running inside of the `envvars` pod on staging
 ```
 stern envvars --context staging --container gateway
